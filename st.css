@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+*
+{
+margin: 0
+}
+.container
+{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(cloudb.jpg);
+background-position: center;
+background-size: cover;
+}
+h1
+{
+color:whitesmoke;
+font-family: "Oswald", sans-serif;
+font: size 25px;;
+margin: 20px 0;
+text-align: center;
+}
+.registartion-form
+{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 500px;
+color:whitesmoke;
+font-size: 18px;
+font-family:'Times New Roman', Times, serif;
+padding: 20px;
+border-style: double;
+border-color: black;
+}
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea
+{
+border-style: double;
+padding: 5px;
+margin-top: 10px;
+font-family: sans-serif;
+}
+.registartion-form input:focus,
+.registartion-form textarea:focus
+{
+outline: none;
+box-shadow: 0 0 10px rgb(228, 228, 228), 0 0 10px rgb(224, 224, 224);
+}
+.registartion-form .submit
+{
+width: 100%;
+padding: 8px 0;
+font-size: 20px;
+font-weight: 600;
+color: #333;
+background-color: #fff;
+border-radius: 5px;
+border-style:hidden;
+
+}

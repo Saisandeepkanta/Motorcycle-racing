@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title> login page </title>
+<script>
+var attempt =3;
+function myfunction()
+{
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if(username === "sandeep" && password === "kanta")
+{
+alert("good");
+window.open("project2.html");
+return false;
+}
+else
+{
+attempt--;
+alert("you have left "+attempt+"attempt");
+if(attempt == 0)
+{
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+</script>
+<style>
+body
+{
+text-align:center;
+background-image : url("loginbike.jpg");
+background-position:center;
+}
+h1
+{
+color:red;
+}
+form
+{
+width :25%;
+padding : 50px;
+border-style:none;
+border-color : white;
+color : green;
+margin-right : auto;
+margin-top : 170px;
+}
+</style>
+</head>
+<body>
+<form>
+<h1><b> LOGIN </b></h1>
+<label for = "username"><b> USERNAME </b></label><br>
+<input type = "text" id = "username" name = "username"><br><br>
+<label for = "password"> PASSWORD </label><br>
+<input type = "password" id = "password" name = "password"><br><br>
+<input type = "button" id = "submit" value = "login" onclick = "myfunction()">
+</form>
+</body>
+</html>
